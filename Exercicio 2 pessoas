@@ -1,0 +1,53 @@
+ackage pessoa;
+
+
+public class Pessoa implements Atributos {
+private String nome;
+private String endereço;
+private String telefone;
+
+    public Pessoa() {
+        this.nome=("Roberto");
+        this.endereço=("Rua dos pássaros 150");
+        this.telefone=("11946354872");
+           }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getEndereço() {
+        return endereço;
+    }
+
+    public void setEndereço(String endereço) {
+        this.endereço = endereço;
+    }
+
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+    
+    
+    
+    
+    
+    
+    package pessoa;
+
+
+public interface Atributos {
+    public abstract void nome();
+    public abstract void endereço();
+    public abstract void telefone();
+    
+    
+}
